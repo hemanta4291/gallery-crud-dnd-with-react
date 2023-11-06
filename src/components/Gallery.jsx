@@ -44,9 +44,6 @@ const Gallery = () => {
       const destinationIndex = destination.index;
       const [draggedItem] = reorderedImages.splice(sourceIndex, 1);
       const [destinationItem] = reorderedImages.splice(destinationIndex, 1);
-      console.log({ draggedItem })
-
-      console.log({ destinationItem })
 
       if (sourceIndex === 0 || destinationIndex === 0) {
         draggedItem.isFeatured = !draggedItem.isFeatured;
